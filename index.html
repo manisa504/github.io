@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Profile</title>
     <style>
-        /* Add your CSS styles here */
-        /* Style the page layout, fonts, colors, etc. */
+        /* Updated CSS styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Nunito', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -53,12 +53,23 @@
             border: 1px solid #ddd;
             padding: 15px;
             border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .project-card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
